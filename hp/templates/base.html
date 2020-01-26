@@ -3,8 +3,62 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Mate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='{% static "css/bulma.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/main.css" %}'>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+       crossorigin="anonymous"></script>
+    <script type="text/javascript" src='{% static "js/custom.js" %}'></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
-  <body>
-    {% block contents %}{% endblock %}
+  <body style="background-color:#d0b98d">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{% url 'hp:home' %}">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="{% url 'hp:home' %}" class="navbar-item">Home</a>
+          <a href="{% url 'hp:self_introduction' %}" class="navbar-item">Self-introduction</a>
+          <a href="{% url 'hp:portfolios' %}" class="navbar-item">Portfolios</a>
+          <a href="{% url 'hp:skills' %}" class="navbar-item">Skills</a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a target="_blank" href="https://www.linkedin.com/in/taichikanaya/" class="button is-primary" style="background-color:#0e76a8">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a target="_blank" href="https://twitter.com/tk_gold_7/" class="button is-primary" style="background-color:#55acee">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/kanayataichi/" class="button is-primary" style="background-color:#3B5998">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container is-fluid">
+      {% block contents %}{% endblock %}
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>© 2018-2020 あったかIT All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
