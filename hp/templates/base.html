@@ -1,8 +1,8 @@
 {% load static %}
-
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load static %}
     <link href="https://fonts.googleapis.com/css?family=Mate&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='{% static "css/bulma.min.css" %}'>
@@ -13,28 +13,26 @@
     <script type="text/javascript" src='{% static "js/custom.js" %}'></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
-  <body style="background-color:#d0b98d">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <body style="background-image: url({% static 'images/back_image.jpg' %});background-size: cover;background-position: left 60%;color:white;" >
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:rgba(0,0,0,0.2);">
       <div class="navbar-brand">
         <a class="navbar-item" href="{% url 'hp:home' %}">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
         </a>
-
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a href="{% url 'hp:home' %}" class="navbar-item">Home</a>
-          <a href="{% url 'hp:self_introduction' %}" class="navbar-item">Self-introduction</a>
-          <a href="{% url 'hp:portfolios' %}" class="navbar-item">Portfolios</a>
-          <a href="{% url 'hp:skills' %}" class="navbar-item">Skills</a>
+      <div id="navbarBasicExample" class="navbar-menu" style="background-color:rgba(0,0,0,0);">
+        <div class="navbar-start" >
+          <a href="{% url 'hp:home' %}" class="navbar-item" style="color:white;">Home</a>
+          <a href="{% url 'hp:about_me' %}" class="navbar-item" style="color:white;">About Me</a>
+          <a href="{% url 'hp:skills' %}" class="navbar-item" style="color:white;">Skills</a>
+          <a href="{% url 'hp:portfolios' %}" class="navbar-item" style="color:white;">Portfolios</a>
+          <a href="{% url 'hp:contact' %}" class="navbar-item" style="color:white;">Contact</a>
         </div>
-
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
@@ -52,12 +50,12 @@
         </div>
       </div>
     </nav>
-    <div class="container is-fluid">
+    <div class="container">
       {% block contents %}{% endblock %}
     </div>
-    <footer class="footer">
+    <footer>
       <div class="content has-text-centered">
-        <p>© 2018-2020 あったかIT All rights reserved.</p>
+        <p style="margin-top:80px">© 2018-2020 あったかIT All rights reserved.</p>
       </div>
     </footer>
   </body>

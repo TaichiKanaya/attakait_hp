@@ -1,3 +1,15 @@
+html {
+  background-color:black;
+}
+
 body {
   font-family: 'Mate', serif;
+  letter-spacing: 4px !important;
+}
+
+a.navbar-item:hover{
+  background: rgba(0,0,0,0.3) !important;
+}
+a:hover{
+  opacity:0.6 !important;
 }

@@ -1,17 +1,47 @@
 {% extends 'base.html' %}
 {% block contents %}
-<div class="columns">
-  <div class="column">
-    First column
+{% load static %}
+<div class="columns" style="margin-top:50px;margin-bottom:50px;">
+  <div class="column has-text-centered">
+    <h1 class="title" style="color:white">ユーザに寄り添った、あったかいITサービスをお届けします</h1>
   </div>
-  <div class="column">
-    Second column
+</div>
+<div class="columns is-centered" style="margin-bottom:50px;">
+  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
+    <figure>
+      <a href="{% url 'hp:about_me' %}">
+        <img class="is-rounded" src="{% static 'images/about_me.jpg' %}"
+           style="border-radius: 290486px;height:180px;width:180;border: 2px #ffffff solid;">
+      </a>
+    </figure>
+    <h1 class="subtitle is-3 is-spaced" style="margin-top:20px;color:white">About Me</h1>
   </div>
-  <div class="column">
-    Third column
+  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
+    <figure>
+      <a href="{% url 'hp:skills' %}">
+        <img class="is-rounded" src="{% static 'images/skills.jpg' %}"
+           style="border-radius: 290486px;height:180px;width:180px;border: 2px #ffffff solid;">
+      </a>
+    </figure>
+    <h1 class="subtitle is-3 is-spaced" style="margin-top:20px;color:white">Skills</h1>
   </div>
-  <div class="column">
-    Fourth column
+  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
+    <figure>
+      <a href="{% url 'hp:portfolios' %}">
+        <img class="is-rounded" src="{% static 'images/portfolios.jpg' %}"
+            style="border-radius: 290486px;height:180px;width:180px;border: 2px #ffffff solid;">
+      </a>
+    </figure>
+    <h1 class="subtitle is-3 is-spaced" style="margin-top:20px;color:white">Portfolios</h1>
+  </div>
+  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
+    <figure>
+      <a href="{% url 'hp:contact' %}">
+        <img class="is-rounded" src="{% static 'images/contact.jpg' %}"
+           style="border-radius: 290486px;height:180px;width:180px;border: 2px #ffffff solid;">
+      </a>
+    </figure>
+    <h1 class="subtitle is-3 is-spaced" style="margin-top:20px;color:white">Contact</h1>
   </div>
 </div>
 {% endblock %}
