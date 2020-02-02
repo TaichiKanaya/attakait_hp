@@ -1,3 +1,15 @@
+@media screen and (max-width:480px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 html {
   background-color:black;
 }
@@ -5,13 +17,6 @@ html {
 body {
   font-family: 'Mate', serif;
   letter-spacing: 4px !important;
-}
-
-a.navbar-item:hover{
-  background: rgba(0,0,0,0.3) !important;
-}
-a:hover{
-  opacity:0.6 !important;
 }
 
 tr {
@@ -27,4 +32,16 @@ th {
 
 td {
   vertical-align:middle !important;
+}
+
+a:hover{
+  opacity:0.6 !important;
+}
+
+a.navbar-item:hover{
+  background: rgba(0,0,0,0.3) !important;
+}
+
+.wrap {
+	overflow: hidden;
 }
