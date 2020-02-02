@@ -1,48 +1,45 @@
 {% extends 'base.html' %}
 {% block contents %}
 {% load static %}
-<div class="columns" style="margin-top:50px;margin-bottom:50px;">
-  <div class="column has-text-centered">
-    <h1 class="is-size-3 is-hidden-mobile">ユーザに寄り添った、あったかいITサービスをお届けします</h1>
-    <h1 class="is-size-5 is-hidden-tablet is-hidden-desktop is-hidden-widescreen">ユーザに寄り添った、<br/>あったかいITサービスをお届けします</h1>
-  </div>
+<div class="columns mt50 mb50">
+    <div class="column has-text-centered">
+        <h1 class="is-size-3 is-hidden-mobile">ユーザに寄り添った、あったかいITサービスをお届けします</h1>
+        <h1 class="is-size-5 is-hidden-tablet is-hidden-desktop is-hidden-widescreen">ユーザに寄り添った、<br/>あったかいITサービスをお届けします
+        </h1>
+    </div>
 </div>
-<div class="columns is-centered" style="margin-bottom:50px;">
-  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
-    <figure>
-      <a href="{% url 'hp:about_me' %}">
-        <img class="is-rounded" src="{% static 'images/about_me.jpg' %}"
-           style="border-radius: 290486px;height:180px;width:180;border: 2px #ffffff solid;">
-      </a>
-    </figure>
-    <p class="is-size-4 is-spaced" style="margin-top:20px;">About Me</p>
-  </div>
-  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
-    <figure>
-      <a href="{% url 'hp:skills' %}">
-        <img class="is-rounded" src="{% static 'images/skills.jpg' %}"
-           style="border-radius: 290486px;height:180px;width:180px;border: 2px #ffffff solid;">
-      </a>
-    </figure>
-    <p class="is-size-4 is-spaced" style="margin-top:20px;">Skills</p>
-  </div>
-  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
-    <figure>
-      <a href="{% url 'hp:portfolios' %}">
-        <img class="is-rounded" src="{% static 'images/portfolios.jpg' %}"
-            style="border-radius: 290486px;height:180px;width:180px;border: 2px #ffffff solid;">
-      </a>
-    </figure>
-    <p class="is-size-4 is-spaced" style="margin-top:20px;">Portfolios</p>
-  </div>
-  <div class="column is-one-quarter has-text-centered" style="margin-top:20px;opacity:0.9;">
-    <figure>
-      <a href="{% url 'hp:contact' %}">
-        <img class="is-rounded" src="{% static 'images/contact.jpg' %}"
-           style="border-radius: 290486px;height:180px;width:180px;border: 2px #ffffff solid;">
-      </a>
-    </figure>
-    <p class="is-size-4 is-spaced" style="margin-top:20px;">Contact</p>
-  </div>
+<div class="columns is-centered">
+    <div class="column is-one-quarter has-text-centered mt20">
+        <figure>
+            <a href="{% url 'hp:about_me' %}">
+                <img class="is-rounded" src="{% static 'images/about_me.jpg' %}">
+            </a>
+        </figure>
+        <p class="is-size-4 is-spaced mt20">About Me</p>
+    </div>
+    <div class="column is-one-quarter has-text-centered mt20">
+        <figure>
+            <a href="{% url 'hp:skills' %}">
+                <img class="is-rounded" src="{% static 'images/skills.jpg' %}">
+            </a>
+        </figure>
+        <p class="is-size-4 is-spaced mt20">Skills</p>
+    </div>
+    <div class="column is-one-quarter has-text-centered mt20">
+        <figure>
+            <a href="{% url 'hp:portfolios' %}">
+                <img class="is-rounded" src="{% static 'images/portfolios.jpg' %}">
+            </a>
+        </figure>
+        <p class="is-size-4 is-spaced mt20">Portfolios</p>
+    </div>
+    <div class="column is-one-quarter has-text-centered mt20">
+        <figure>
+            <a href="{% url 'hp:contact' %}">
+                <img class="is-rounded" src="{% static 'images/contact.jpg' %}">
+            </a>
+        </figure>
+        <p class="is-size-4 is-spaced mt20">Contact</p>
+    </div>
 </div>
 {% endblock %}

@@ -17,11 +17,17 @@ html {
 body {
   font-family: 'Mate', serif;
   letter-spacing: 4px !important;
+  color:white !important;
+  background-size: cover;
+  background-position: left 60%;
+}
+
+table {
+  border: 2px solid #fff;
 }
 
 tr {
   height:50px !important;
-
 }
 
 th {
@@ -34,6 +40,10 @@ td {
   vertical-align:middle !important;
 }
 
+td.category {
+  background-color:#EEE;
+}
+
 a:hover{
   opacity:0.6 !important;
 }
@@ -42,6 +52,58 @@ a.navbar-item:hover{
   background: rgba(0,0,0,0.3) !important;
 }
 
+img {
+  border-radius: 290486px;
+  height: 180px;
+  width: 180px;
+  border: 2px #FFFFFF solid;
+}
+
 .wrap {
 	overflow: hidden;
 }
+
+.navbar {
+  background-color:rgba(0,0,0,0.2);
+}
+
+.navbar-item {
+  color:white !important;
+}
+
+
+.linkedIn {
+  background-color:#0e76a8 !important;
+}
+
+.twitter {
+  background-color:#55acee !important;
+}
+
+.facebook {
+  background-color:#3B5998 !important;
+}
+
+
+#homeIcon {
+  margin:0 0 2.5px 10px;
+}
+
+#navbarBasic {
+  background-color:rgba(0,0,0,0);
+}
+
+#pr {
+  border:0.5px #fff solid;
+  background-color:rgba(0,0,0,0.5);
+  padding:20px 0px 20px 0px;
+}
+
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt50{margin-top:50px;}
+.mt80{margin-top:80px;}
+.mb50{margin-bottom:50px;}
+
+.wd50pc{width:50%}
