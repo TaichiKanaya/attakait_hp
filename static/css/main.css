@@ -13,3 +13,18 @@ a.navbar-item:hover{
 a:hover{
   opacity:0.6 !important;
 }
+
+tr {
+  height:50px !important;
+
+}
+
+th {
+  vertical-align:middle !important;
+  background-color: #ADD8E6;
+  border: 3px #000 solid;
+}
+
+td {
+  vertical-align:middle !important;
+}
