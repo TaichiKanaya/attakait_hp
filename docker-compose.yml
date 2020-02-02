@@ -7,7 +7,7 @@ services:
     image: python:3.7
     volumes:
       - '.:/var/www/html'
-    container_name: attakait_hp
+    container_name: hp
     tty: true
     working_dir: '/var/www/html'
     ports:

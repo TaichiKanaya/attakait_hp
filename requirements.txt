@@ -1,5 +1,4 @@
 asgiref==3.2.3
--e git+https://github.com/TaichiKanaya/attakait_hp.git@50cb5ca714039726931c8e34849c0113fc160ce9#egg=attakait_hp
 Django==3.0.2
 gunicorn==20.0.4
 pbr==5.4.4
