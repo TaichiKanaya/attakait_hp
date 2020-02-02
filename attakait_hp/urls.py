@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 # 管理ページの文言設定
 admin.site.site_title = 'あったかIT'
@@ -25,3 +26,5 @@ urlpatterns = [
     path('setting/', admin.site.urls),
     path('hp/', include('hp.urls')),
 ]
+
+urlpatterns += staticfiles_urlpatterns()

@@ -1,0 +1,13 @@
+asgiref==3.2.3
+-e git+https://github.com/TaichiKanaya/attakait_hp.git@50cb5ca714039726931c8e34849c0113fc160ce9#egg=attakait_hp
+Django==3.0.2
+gunicorn==20.0.4
+pbr==5.4.4
+pi==0.1.2
+pytz==2019.3
+six==1.14.0
+sqlparse==0.3.0
+stevedore==1.31.0
+virtualenv==16.7.9
+virtualenv-clone==0.5.3
+virtualenvwrapper==4.8.4
