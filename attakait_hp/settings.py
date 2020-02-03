@@ -25,7 +25,7 @@ SECRET_KEY = '65psx#^q9ur5$wdajj57!^g9y)a!+@f@x(i-uq06wag5u&dzpm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['attakait-hp.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
