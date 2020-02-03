@@ -1,0 +1,65 @@
+{% load static %}
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Mate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='{% static "css/bulma.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/main.css" %}'>
+    <script type="text/javascript" src='{% static "js/jquery-3.4.1.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/custom.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/fontawesome-5.3.1-all.js" %}'></script>
+</head>
+<body style="background-image: url({% static 'images/back_image.jpg' %});">
+<div class="wrap">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a id="homeIcon" class="navbar-item" href="{% url 'hp:home' %}">
+                <i class="fas fa-coffee"></i>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="{% url 'hp:home' %}" class="navbar-item">Home</a>
+                <a href="{% url 'hp:about_me' %}" class="navbar-item">About Me</a>
+                <a href="{% url 'hp:skills' %}" class="navbar-item">Skills</a>
+                <a href="{% url 'hp:portfolios' %}" class="navbar-item">Portfolios</a>
+                <a href="{% url 'hp:contact' %}" class="navbar-item">Contact</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a target="_blank" href="https://www.linkedin.com/in/taichikanaya/"
+                           class="button is-primary linkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/tk_gold_7/"
+                           class="button is-primary twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/kanayataichi/"
+                           class="button is-primary facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        {% block contents %}{% endblock %}
+    </div>
+    <footer>
+        <div class="content has-text-centered mt80">
+            <p>© 2018-2020 あったかIT All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
