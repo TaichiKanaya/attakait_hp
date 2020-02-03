@@ -1,1 +1,1 @@
-web: gunicorn destiny.wsgi --log-file -
+web: gunicorn attakait_hp.wsgi --log-file -
