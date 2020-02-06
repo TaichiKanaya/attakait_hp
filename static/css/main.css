@@ -14,15 +14,21 @@ html {
   background-color:black;
 }
 
-.background-setting {
+body {
   font-family: 'Mate', serif;
   letter-spacing: 4px !important;
   color:white !important;
-  background-image: url("/static/images/back_image.jpg");
+}
+
+.main-content {
+  background: url("/static/images/back_image.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: left 60%;
-  background-position: right 35% bottom 38%;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 table {
