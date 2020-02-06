@@ -5,4 +5,6 @@ $(document).ready(function(){
     burger.toggleClass('is-active');
     menu.toggleClass('is-active');
   });
+
+  $("body").addClass("background-setting");
 });

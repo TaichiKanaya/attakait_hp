@@ -14,7 +14,7 @@ html {
   background-color:black;
 }
 
-body {
+.background-setting {
   font-family: 'Mate', serif;
   letter-spacing: 4px !important;
   color:white !important;
