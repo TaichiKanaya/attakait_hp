@@ -2,11 +2,17 @@
   html {
     font-size: 11px;
   }
+  body {
+    background-position: left 40%;
+  }
 }
 
 @media screen and (min-width:480px) {
   html {
     font-size: 18px;
+  }
+  body {
+    background-position: left 60%;
   }
 }
 
@@ -19,7 +25,6 @@ body {
   letter-spacing: 4px !important;
   color:white !important;
   background-size: cover;
-  background-position: right 35% bottom 38%;
 }
 
 table {
