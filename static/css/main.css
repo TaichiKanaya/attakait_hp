@@ -2,11 +2,19 @@
   html {
     font-size: 11px;
   }
+  img.large{
+    height: 150px;
+    width: 450px;
+  }
 }
 
 @media screen and (min-width:480px) {
   html {
     font-size: 18px;
+  }
+  img.large{
+    height: 180px;
+    width: 450px;
   }
 }
 
@@ -61,10 +69,14 @@ a.navbar-item:hover{
   background: rgba(0,0,0,0.3) !important;
 }
 
-img {
+img.medium{
   border-radius: 290486px;
   height: 180px;
   width: 180px;
+  border: 2px #FFFFFF solid;
+}
+img.large{
+  border-radius: 290486px;
   border: 2px #FFFFFF solid;
 }
 

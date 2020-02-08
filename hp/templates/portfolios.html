@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
 {% block title %}Portfolios{% endblock %}
 {% block contents %}
+{% load static %}
 <div class="columns">
     <div class="column has-text-centered">
         <p class="is-size-2 mt20">Portfolios</p>
-        <p class="is-size-4 mt20">ただいま準備中です。</p>
+        <figure>
+            <a target="_blank" href="https://www.manamana.biz/login">
+                <img style="background-color:#dbdcf4" class="large is-rounded mt30" src="{% static 'images/manamana.png' %}">
+            </a>
+        </figure>
+        <p class="mt30">知識を右脳に記憶させるツール</p>
+        <p>商品紹介ページは<a target="_blank" href="https://www.attakait.store/manamana" /><b>こちら</b></a>から</p>
+        <figure>
+            <a target="_blank" href="https://destiny-choice.herokuapp.com">
+                <img style="background-color:#dbdcf4" class="large is-rounded mt30" src="{% static 'images/destiny.png' %}">
+            </a>
+        </figure>
+        <p class="mt30">選択に迷ったときのためのヘルパーツール</p>
     </div>
 </div>
 {% endblock %}
