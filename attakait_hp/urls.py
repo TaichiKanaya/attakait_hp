@@ -13,11 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 # 管理ページの文言設定
+from hp import views
+
 admin.site.site_title = 'あったかIT'
 admin.site.site_header = 'コンテンツ管理'
 admin.site.index_title = 'メニュー'
@@ -25,6 +28,7 @@ admin.site.index_title = 'メニュー'
 urlpatterns = [
     path('setting/', admin.site.urls),
     path('hp/', include('hp.urls')),
+    url(r'^$', views.HomeView.as_view(), name="home"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
