@@ -2,6 +2,14 @@
 {% block title %}Home{% endblock %}
 {% block contents %}
 {% load static %}
+<script type="text/javascript">
+    $(function() {
+        $('#pageloader').addClass('is-active');
+    });
+    $(window).on('load', function () {
+        setTimeout(function(){$('#pageloader').removeClass('is-active');},500);
+    });
+</script>
 <div class="columns mt50 mb50">
     <div class="column has-text-centered">
         <h1 class="is-size-3 is-hidden-mobile">ユーザに寄り添った、あったかいITサービスをお届けします</h1>
