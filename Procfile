@@ -1,1 +1,0 @@
-web: gunicorn attakait_hp.wsgi --log-file -
