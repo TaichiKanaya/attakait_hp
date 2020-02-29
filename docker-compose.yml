@@ -13,4 +13,4 @@ services:
     ports:
       - 8000:8000
     command:
-      gunicorn attakait_hp.wsgi --log-file -
+      gunicorn attakait_hp.wsgi --bind 0.0.0.0:8000 --log-file -

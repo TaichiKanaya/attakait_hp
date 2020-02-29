@@ -130,6 +130,10 @@ dmypy.json
 
 # staticfiles
 staticfiles
+static/admin
 
 # idea
 .idea/
+
+# node_modules
+node_modules
