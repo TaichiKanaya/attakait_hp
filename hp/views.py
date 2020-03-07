@@ -23,3 +23,6 @@ class SkillsView(generic.TemplateView):
 
 class ContactView(generic.TemplateView):
     template_name = 'contact.html'
+
+class LpManaManaView(generic.TemplateView):
+    template_name = 'manamana.html'

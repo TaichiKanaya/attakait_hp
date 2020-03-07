@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="ja">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137827105-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-137827105-3');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@tk_gold_7"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.attakait.xyz"/>
+    <meta property="og:title" content="あったかIT"/>
+    <meta property="og:description" content="ユーザに寄り添った、あったかいITサービスをお届けします"/>
+    <meta property="og:image" content="https://www.attakait.xyz{% static 'images/ogp.png' %}"/>
+    <meta property="og:image:width" content="200px"/>
+    <meta property="og:image:height" content="200px"/>
+    <meta property="og:site_name" content="ホームページ | あったかIT"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/fv.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/fv.png' %}" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="16x16" href="{% static 'images/fv.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/fv.png' %}" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='{% static "css/bulma.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/main_lp.css" %}'>
+    <script type="text/javascript" src='{% static "js/jquery-3.4.1.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/custom.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/fontawesome-5.3.1-all.js" %}'></script>
+    <title>{% block title %}{% endblock %} | あったかIT</title>
+</head>
+<body style="background-color:white;color:black">
+{% block contents %}{% endblock %}
+<footer>
+    <div class="content has-text-centered mt80" style="background-color:#223a70;color:white;">
+        <br/>
+        <p>© 2018-2020 あったかIT All rights reserved.</p>
+        <br/>
+    </div>
+</footer>
+</body>
+</html>
